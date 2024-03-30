@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    border-left: #BEC4CD 1px solid;
+    border-radius: 17px;
+    padding: 1.2rem;
 }
 
 .menuArrow {

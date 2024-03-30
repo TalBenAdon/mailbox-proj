@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './styles.module.css'
-import InboxMessage from '../InboxMessage'
-import SearchBar from '../SearchBar'
+import InboxMessage from '../../components/InboxMessage'
+import SearchBar from '../../components/SearchBar'
 export default function InboxMessagesList({ conversationsList, setReadMsg, readMsg }) {
     return (
         <div className={styles.messagesListContainer}>

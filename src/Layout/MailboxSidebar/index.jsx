@@ -8,6 +8,7 @@ import { MdDeleteForever } from "react-icons/md";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { AiFillHtml5 } from "react-icons/ai";
 import MailboxButton from '../../components/MailboxButton';
+import MessageButton from '../../components/MessageButton';
 export default function MailboxSidebar({ readMsg }) {
     const [arrowRight, setArrowRight] = useState(false)
     const toggleArrow = () => {
@@ -34,6 +35,7 @@ export default function MailboxSidebar({ readMsg }) {
 
     return (
         <div className={styles.container}>
+            <MessageButton />
             {mailBoxNavData.map((data, index) => {
                 return <MailboxButton key={index}
                     icon={data.icon}

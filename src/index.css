@@ -14,9 +14,9 @@ button {
   background: none;
 }
 
-html {
+/* html {
   background-color: beige;
-}
+} */
 
 :root {
   --button-color: #00A389;
