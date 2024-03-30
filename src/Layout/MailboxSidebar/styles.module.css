@@ -1,0 +1,45 @@
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.menuArrow {
+    font-size: 24px;
+    color: #BEC4CD;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textClass {
+    color: black;
+    font-weight: var(--title-font-weight);
+    transition: opacity 300ms;
+}
+
+.arrowAndText {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.accordion {
+    display: grid;
+    transition: grid-template-rows 250ms ease-out;
+}
+
+.flexing {
+    display: flex;
+    gap: 24px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

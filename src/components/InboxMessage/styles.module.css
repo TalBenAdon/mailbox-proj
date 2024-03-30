@@ -1,5 +1,5 @@
 .inboxMessageContainer {
-    background-color: var(--read-msg-color);
+    /* background-color: var(--read-msg-color); */
     padding: 0.6rem;
     padding-inline-start: 1.2rem;
     padding-top: 0.7 rem;
@@ -9,6 +9,9 @@
     flex-direction: row;
     align-items: center;
     gap: 0.8rem;
+    transition: background-color 300ms ease, box-shadow 300ms ease;
+    border-radius: 7px;
+
 }
 
 .avatarImg {
@@ -23,7 +26,9 @@
 
 .active {
     background-color: white;
-    border-radius: 7px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.43);
 }
 
 .inboxMessageContainer,
@@ -78,4 +83,19 @@
     color: #00A389;
 
     width: 12px;
+}
+
+.unreadMsgsIcon {
+    font-family: Kanit;
+    width: 24px;
+    height: 24px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+    background-color: var(--button-color);
+
 }

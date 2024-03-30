@@ -1,0 +1,32 @@
+.mainSideBarContainer {
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    height: 800px;
+    padding: 1.2rem;
+
+}
+
+.appIcon {
+    color: var(--button-color);
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+
+.iconBundle {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabIcon {
+    color: #A2AAB4;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
