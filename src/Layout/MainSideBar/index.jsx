@@ -10,27 +10,32 @@ import { SlPeople } from "react-icons/sl";
 import { BsBarChartFill } from "react-icons/bs";
 import { BiSolidVideo } from "react-icons/bi";
 import SideBarsButton from '../../components/SideBarsButton';
-export default function MainSideBar({ avatarImg }) {
+import defaultImg from '../../assets/defaultImg.jpg'
+import { Outlet } from 'react-router-dom';
+export default function MainSideBar() {
 
     const sideBarButtonData = [
         { icon: <SlSpeedometer />, to: 'speed' }
         , { icon: <BiTask />, to: 'task' },
         { icon: <GiEvilEyes />, to: 'overview' }
-        , { icon: <IoIosPeople />, to: 'community' },
+        , { icon: <IoIosPeople />, to: 'messages' },
         { icon: <BsBarChartFill />, to: 'data' },
-        { icon: <BiSolidVideo />, to: 'vido' }
+        { icon: <BiSolidVideo />, to: 'video' }
     ]
 
 
     return (
-        <div className={styles.mainSideBarContainer}>
-            <TiDeviceDesktop className={styles.appIcon} />
-            <div className={styles.iconBundle}>
-                {sideBarButtonData.map((data, index) => {
-                    return <SideBarsButton key={index} icon={data.icon} to={data.to} />
-                })}
+        <div className={styles.layout}>
+            <div className={styles.mainSideBarContainer}>
+                <TiDeviceDesktop className={styles.appIcon} />
+                <div className={styles.iconBundle}>
+                    {sideBarButtonData.map((data, index) => {
+                        return <SideBarsButton key={index} icon={data.icon} to={data.to} />
+                    })}
+                </div>
+                <img src={defaultImg} className='avatarImg' alt="User Image" />
             </div>
-            <img src={avatarImg} className='avatarImg' alt="User Image" />
+            <Outlet />
         </div>
     )
 }

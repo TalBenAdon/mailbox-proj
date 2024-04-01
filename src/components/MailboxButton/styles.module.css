@@ -5,6 +5,11 @@
 
 }
 
+.btnBody:hover .navIcon,
+.btnBody:hover .navText {
+    color: var(--button-color);
+}
+
 .navIcon,
 .navText {
     transition: color 300ms ease;

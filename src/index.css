@@ -33,3 +33,41 @@ button {
   height: 3rem;
   border-radius: 50px;
 }
+
+.appConfinement {
+  /* background-color: blanchedalmond */
+}
+
+@media (width > 1919px) {
+  .appConfinement {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .appConfinement>div {
+    max-width: 1900px;
+    /* height: 900px; */
+    /* padding: 4rem; */
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00A389;
+  border-radius: 10px
+    /* dark grey, or choose your color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00a388cb;
+  /* darker grey or any hover color */
+}

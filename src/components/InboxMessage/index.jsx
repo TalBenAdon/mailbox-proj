@@ -4,8 +4,8 @@ import defaultImg from '../../assets/defaultImg.jpg'
 import MessageEllipsis from '../MessageEllipsis'
 import { BsFillStarFill } from "react-icons/bs";
 import { NavLink, useLocation } from 'react-router-dom';
-export default function InboxMessage({ setReadMsg, readMsg, avatarImg, userName, msgPreview, sentTime, to }) {
-
+export default function InboxMessage({ avatarImg, userName, msgPreview, sentTime, to }) {
+    const [readMsg, setReadMsg] = useState(false)
 
     const location = useLocation()
     const [isFavorite, setIsFavorite] = useState(false)

@@ -2,14 +2,11 @@
     background-color: white;
     padding: 0.6rem;
     border-radius: 7px;
-    margin-top: 5px;
     padding-inline-start: 1rem;
 
 }
 
 .accordion {
-
-
     display: grid;
     transition: grid-template-rows 250ms ease-out;
 }

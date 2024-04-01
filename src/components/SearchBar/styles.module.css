@@ -13,7 +13,8 @@
     background-color: #E4E8EE;
     border-radius: 7px;
     width: 100%;
-    padding: 0.7rem;
+    height: 40px;
+    padding: 0 0.7rem 0 0.7rem;
     font-weight: 500;
 }
 

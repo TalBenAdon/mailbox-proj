@@ -7,9 +7,12 @@ import { BiSolidPencil } from "react-icons/bi";
 import { MdDeleteForever } from "react-icons/md";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { AiFillHtml5 } from "react-icons/ai";
+import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import { HiMail } from "react-icons/hi";
+
 import MailboxButton from '../../components/MailboxButton';
 import MessageButton from '../../components/MessageButton';
-export default function MailboxSidebar({ readMsg }) {
+export default function MailboxSidebar() {
     const [arrowRight, setArrowRight] = useState(false)
     const toggleArrow = () => {
         setArrowRight(!arrowRight)
@@ -21,11 +24,11 @@ export default function MailboxSidebar({ readMsg }) {
         color: arrowRight && '#00A389'
     }
     const mailBoxNavData = [
-        { icon: <MdMoveToInbox />, text: 'Inbox', to: '/Inbox' },
-        { icon: <FaPaperPlane />, text: 'Sent Emails', to: '/sent-emails', },
-        { icon: <BsFillStarFill />, text: 'Favourite', to: '/favourite', },
-        { icon: <BiSolidPencil />, text: 'Draft', to: '/draft', },
-        { icon: <MdDeleteForever />, text: 'Deleted', to: '/deleted' },
+        { icon: <MdMoveToInbox />, text: 'Inbox', to: 'Inbox' },
+        { icon: <FaPaperPlane />, text: 'Sent Emails', to: 'sent-emails', },
+        { icon: <BsFillStarFill />, text: 'Favourite', to: 'favourite', },
+        { icon: <BiSolidPencil />, text: 'Draft', to: 'draft', },
+        { icon: <MdDeleteForever />, text: 'Deleted', to: 'deleted' },
     ]
     const moreData = [{ icon: <AiFillHtml5 />, text: 'Extra', to: "100" },
     { icon: <AiFillHtml5 />, text: 'Extra', to: "101" },
@@ -34,14 +37,23 @@ export default function MailboxSidebar({ readMsg }) {
 
 
     return (
+        // <div className={styles.whitePadding}>
+
         <div className={styles.container}>
-            <MessageButton />
+            <div className={styles.titleContainer}>
+                <div className={styles.iconDiv}>
+                    <MdOutlineKeyboardArrowLeft />
+                </div>
+                <div className={styles.title}>Mailbox</div>
+            </div>
+            <hr className={styles.topHr} />
+            <MessageButton icon={<HiMail />} title={'New Message'} />
             {mailBoxNavData.map((data, index) => {
                 return <MailboxButton key={index}
                     icon={data.icon}
                     text={data.text}
                     to={data.to}
-                    readMsg={readMsg}
+                    readMsg={false}
                 />
             })}
             <div className={styles.arrowAndText}>
@@ -67,5 +79,6 @@ export default function MailboxSidebar({ readMsg }) {
                 </div>
             </div>
         </div>
+        // </div>
     )
 }
