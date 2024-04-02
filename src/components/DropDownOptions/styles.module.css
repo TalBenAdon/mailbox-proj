@@ -1,20 +1,21 @@
 .dropDownMenu {
     position: absolute;
     right: 0px;
-    bottom: 90%;
-    width: 200px;
+
+    /* width: 200px; */
     padding: 0.2rem;
     /* z-index: 100; */
+    /* top: 80px; */
+}
+
+button {
+    position: relative;
 }
 
 li {
     list-style-type: none;
 }
 
-.menuWrapper {
-    position: relative;
-    display: inline-block;
-}
 
 .dotsSyle {
     font-size: 1.4rem;

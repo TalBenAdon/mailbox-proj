@@ -76,6 +76,7 @@ export default function MessagesChatPage() {
     const footerDeleteOptionsData = [{ icon: <BiSolidTrashAlt /> }, { icon: <BsThreeDotsVertical /> }]
     return (
         <div className={styles.MessagesChatPageContainer}>
+
             <div className={styles.pageHeader}>
                 Special offers
                 <div className={styles.iconsContainer}>
