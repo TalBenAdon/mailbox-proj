@@ -42,12 +42,12 @@ button {
   .appConfinement {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
   }
 
   .appConfinement>div {
-    max-width: 1900px;
+    /* max-width: 1900px; */
     /* height: 900px; */
     /* padding: 4rem; */
   }
@@ -70,4 +70,13 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: #00a388cb;
   /* darker grey or any hover color */
+}
+
+.regLogPageContainer {
+  background-color: #E4E8EE;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

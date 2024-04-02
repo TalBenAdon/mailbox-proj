@@ -12,7 +12,7 @@ export default function OpenedMessage({ avatarImg, userName, date, hour, msg }) 
 
     return (
         <div className={styles.openedMessageContainer} >
-            <div className={styles.openedMessageHeader} onClick={() => handleOnclick()}>
+            <button className={styles.openedMessageHeader} onClick={() => handleOnclick()}>
                 <img src={avatarImg} className='avatarImg' alt="avatar image" />
                 <div className={styles.userName}>{userName}</div>
                 <div className={styles.ellipsisContainer}>
@@ -22,7 +22,7 @@ export default function OpenedMessage({ avatarImg, userName, date, hour, msg }) 
                     <div className={styles.dateHour}>{date}</div>
                     <div className={styles.dateHour}>{hour}</div>
                 </div>
-            </div>
+            </button>
             <div className={styles.accordion} style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}>
                 <div style={{ overflowY: 'hidden' }}>
                     <div className={styles.msgContent}>

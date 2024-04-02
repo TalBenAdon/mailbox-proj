@@ -63,3 +63,7 @@
 .ellipsisContainer {
     min-width: 0;
 }
+
+button {
+    cursor: pointer;
+}

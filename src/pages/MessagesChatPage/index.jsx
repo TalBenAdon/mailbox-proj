@@ -72,7 +72,7 @@ export default function MessagesChatPage() {
                     {footerDeleteOptionsData.map((data, index) => {
                         return <ButtonsHeaderFooter key={index} icon={data.icon} />
                     })}
-                    <MessageButton icon={<IoPaperPlane />} title={'Send'} />
+                    <MessageButton icon={<IoPaperPlane />} title={'Send'} wrap={true} />
                 </div>
             </div>
         </div>
