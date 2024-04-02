@@ -16,10 +16,10 @@ import styles from './styles.module.css'
 //         </div>
 //     )
 // }
-export default function MessageInputBox() {
+export default function MessageInputBox({ onChange, value, name }) {
     return (
         <div>
-            <textarea name="inboxMsg" className={styles.input} placeholder='Write your message here' />
+            <textarea name={name} className={styles.input} onChange={onChange} placeholder='Write your message here' value={value} />
         </div>
     )
 }

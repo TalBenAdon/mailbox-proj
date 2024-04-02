@@ -35,7 +35,7 @@ export default function Form({ formType }) {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        console.log('hi');
+        console.log(formState);
     }
 
     const formTypeSwitchCase = (formType) => {
